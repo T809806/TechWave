@@ -64,11 +64,12 @@ button:hover {
     transform: scale(1.05); 
 }
 
+
+
 .section_1 {
-    position: relative; /* parent container relative */
+    position: relative; 
     width: 100%;
     height: 760px; 
-   
 }
 
 .image_related {
@@ -260,4 +261,119 @@ button:hover {
     height: 40px;
     padding: 10px 14px;
   }
+}
+
+.hero_section {
+    text-align: center;
+    background-color: #1A0B2E;
+    max-width: 1600px;
+    margin-top: -40px;
+}
+
+.ratings {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.hero_section_text h4 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+}
+
+.hero_section_text p {
+    opacity: 60%;
+    font-size: 12px;
+    line-height: 20px;
+    gap: 10px;
+    color: #FFFFFF;
+}
+
+#hero_section_3_p {
+    opacity: 60%;
+    margin-top: 20px;
+    margin-bottom: 60px;
+}
+
+.ratings h4 {
+    color: #00FF88;
+    font-size: 35px;
+    font-weight: bolder;
+}
+
+.ratings span {
+    color: #FFFFFF;
+   font-size: 14px;
+   opacity: 60%;
+}
+
+.hero_section hr {
+      margin-left: 150px;
+      margin-right: 150px;
+      opacity: 20%;
+}
+
+/*responsive*/
+
+@media (max-width: 576px) {
+
+    .hero_section {
+        margin-top: -280px;
+    }
+    .hero_section_text h4 {
+        font-size: 1.4rem;
+    }
+    .hero_section_text p {
+        font-size: 10px;
+        line-height: 16px;
+    }
+    #hero_section_3_p {
+        margin-bottom: 30px;
+    }
+    .ratings {
+        flex-direction: column; 
+        gap: 15px;
+        margin-top: 30px;
+    }
+    .ratings h4 {
+        font-size: 24px;
+    }
+    .ratings span {
+        font-size: 11px;
+    }
+    .hero_section hr {
+        width: 90%;
+        margin: 15px auto;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    .hero_section {
+        margin-top: -233px;
+    }
+    .hero_section_text h4 {
+        font-size: 1.6rem;
+    }
+    .hero_section_text p {
+        font-size: 11px;
+        line-height: 18px;
+    }
+    #hero_section_3_p {
+        margin-bottom: 40px;
+    }
+    .ratings h4 {
+        font-size: 28px;
+    }
+    .ratings span {
+        font-size: 12px;
+    }
+    .hero_section hr {
+        width: 80%;
+        margin: 20px auto;
+    }
 }
