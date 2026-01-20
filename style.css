@@ -39,7 +39,7 @@ body {
 }
 
 nav ul li a {
-    color: white;
+    color: #FFFFFF;
     text-decoration: none;
     font-size: 13px;
     transition: color 0.3s, border-bottom 0.3s;
@@ -235,8 +235,7 @@ button:hover {
     color: #00FF88;
 }
 
- 
-/*responsive*/
+ /*responsive*/
 
 @media (max-width: 576px) {
   .section_1 {
@@ -322,6 +321,7 @@ button:hover {
     text-align: center;
     background-color: #1A0B2E;
     max-width: 1600px;
+    margin-top: -38px;
     margin-bottom: 0;
     padding-bottom: 0;
 }
@@ -741,6 +741,9 @@ button:hover {
     justify-content: center;
   }
 }
+
+
+/*footer*/
 
 .footer_section {
     position: relative;
