@@ -568,7 +568,7 @@ button:hover {
 
 @media (min-width: 577px) and (max-width: 992px) {
 
-  .cards {
+.cards {
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
@@ -592,4 +592,130 @@ button:hover {
   .host_section_icons {
     justify-content: center;
   }
+}
+
+.footer_section {
+    position: relative;
+    width: 100%;
+    background-color: #1A0B2E; /* fallback color */
+    overflow: hidden;
+}
+
+.footer_image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+.footer_text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #FFFFFF;
+    padding: 20px;
+    width: 90%;
+    max-width: 1200px;
+}
+
+.footer_text h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+
+.footer_icon {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.footer_icon div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+}
+
+.footer_icon img {
+    width: 12px;
+    height: 12px;
+    
+}
+
+.footer_icon span {
+    font-size: 0.9rem;
+    color: #FFFFFF;
+    opacity: 80%;
+}
+
+#copyright_text {
+    font-size: 0.8rem;
+    color: #FFFFFF;
+    opacity: 60%;
+}
+
+/*responsive*/
+
+@media (max-width: 576px) {
+    .footer_text h2 {
+        font-size: 2rem;
+    }
+
+    .footer_icon {
+        gap: 20px;
+        flex-direction: column;
+    }
+
+    .footer_icon div {
+        flex-direction: column; 
+        gap: 6px;
+        align-items: center;
+    }
+
+
+    .footer_icon img {
+        width: 30px;
+        height: 30px;
+        flex-wrap: wrap;
+    }
+
+    .footer_icon span {
+        font-size: 0.8rem;
+    }
+}
+
+
+@media (min-width: 577px) and (max-width: 992px) {
+    .footer_text h2 {
+        font-size: 3.2rem; 
+    }
+
+    .footer_icon {
+        gap: 40px; 
+        flex-direction: row;
+    }
+
+     .footer_icon div {
+        flex-direction: row;
+        gap: 8px;
+        align-items: center;
+    }
+
+    .footer_icon img {
+        width: 35px;
+        height: 35px;
+    }
+
+    .footer_icon span {
+        font-size: 0.85rem;
+    }
+
+    #copyright_text {
+        font-size: 0.8rem;
+    }
 }
