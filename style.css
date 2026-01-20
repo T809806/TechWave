@@ -59,6 +59,13 @@ nav ul li a:hover {
     transition: all 0.3s ease;
 }
 
+hr {
+    border: none;
+    height: 1px;            
+    color: #FFFFFF;  
+    opacity: 0.2;           
+}
+
 button:hover {
     background: linear-gradient(45deg, #9100F8, #FB09B4, #F7E93F); 
     transform: scale(1.05); 
@@ -597,7 +604,8 @@ button:hover {
 .footer_section {
     position: relative;
     width: 100%;
-    background-color: #1A0B2E; /* fallback color */
+    min-height: 412px;
+    background-color: #1A0B2E; 
     overflow: hidden;
 }
 
@@ -625,7 +633,6 @@ button:hover {
     font-weight: 700;
     margin-bottom: 30px;
 }
-
 
 .footer_icon {
     display: flex;
@@ -668,7 +675,9 @@ button:hover {
 
     .footer_icon {
         gap: 20px;
+        display: flex;
         flex-direction: column;
+        flex-wrap: nowrap;
     }
 
     .footer_icon div {
@@ -681,7 +690,7 @@ button:hover {
     .footer_icon img {
         width: 30px;
         height: 30px;
-        flex-wrap: wrap;
+        
     }
 
     .footer_icon span {
@@ -696,8 +705,10 @@ button:hover {
     }
 
     .footer_icon {
-        gap: 40px; 
+        gap: 25px; 
         flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
      .footer_icon div {
@@ -719,3 +730,18 @@ button:hover {
         font-size: 0.8rem;
     }
 }
+
+
+/*animation*/
+
+.card {
+    transition: transform 0.3s ease;
+     border: 2px solid transparent;
+}
+
+
+.card:hover {
+    transform: translateY(-8px);
+    border-color: plum;
+}
+
